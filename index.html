@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpressPay Receipt Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-fields">
+        <h2>Enter Payment Details</h2>
+        <div class="field">
+            <label for="service">Service:</label>
+            <input type="text" id="service" value="MTN Mobile Money">
+        </div>
+        <div class="field">
+            <label for="accountNumber">Account Number:</label>
+            <input type="text" id="accountNumber" value="0540676659">
+        </div>
+        <div class="field">
+            <label for="transactionId">Transaction ID:</label>
+            <input type="text" id="transactionId" value="43es54eb361a">
+        </div>
+        <div class="field">
+            <label for="date">Date:</label>
+            <input type="text" id="date" value="10th May, 2025 @ 08:03:25">
+        </div>
+        <div class="field">
+            <label for="reference">Reference:</label>
+            <input type="text" id="reference" value="WEALTHFUND PARTNERS LIMITED">
+        </div>
+        <div class="field">
+            <label for="total">Total:</label>
+            <input type="text" id="total" value="GHS 3800.00">
+        </div>
+        <button onclick="generateExpressPayReceipt()">Generate Receipt</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
