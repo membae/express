@@ -63,38 +63,35 @@ function generateExpressPayReceipt() {
                     cursor: pointer;
                 }
                     .progress-bar {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        margin-bottom: 20px;
-                        padding: 0 10px;
-                    }
-                    .progress-step {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        color: #999;
-                        font-size: 14px;
-                    }
-                    .progress-step.active {
-                        color: ${primaryColor};
-                    }
-                    .progress-icon {
-                        width: 24px;
-                        height: 24px;
-                        border-radius: 50%;
-                        border: 2px solid #999;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 5px;
-                        font-size: 16px;
-                    }
-                    .progress-step.active .progress-icon {
-                        border-color: ${primaryColor};
-                        background-color: ${primaryColor};
-                        color: white;
-                    }
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 0 10px;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.progress-step i {
+  color: #007bff; /* Blue icon */
+}
+
+.progress-step span {
+  color: #000; /* Black text */
+  font-weight: bold;
+}
+.progress-line {
+  width: 90%;
+  height: 20px;
+  background-color: rgb(241, 70, 18);;
+  margin: 10px auto 0; /* centers the line horizontally */
+  border-radius: 2px;
+}
+
+
                     .details-section {
                         padding: 15px 0;
                     }
@@ -130,21 +127,27 @@ function generateExpressPayReceipt() {
                         <div class="menu-icon">
                             <i class="fa-solid fa-bars"></i>
                         </div>
+                                              
                     </div>
+
+                    
                     <div class="progress-bar">
-                        <div class="progress-step active">
-                            <div class="progress-icon">&#10004;</div>
-                            Begin
-                        </div>
-                        <div class="progress-step active">
-                            <div class="progress-icon">&#10004;</div>
-                            Payment Method
-                        </div>
-                        <div class="progress-step active">
-                            <div class="progress-icon">&#10004;</div>
-                            Confirm
-                        </div>
+                    <div class="progress-step active">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Begin</span>
                     </div>
+                    <div class="progress-step active">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Payment Method</span>
+                    </div>
+                    <div class="progress-step active">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Confirm</span>
+                    </div>
+                    </div>
+                    <div class="progress-line"></div>
+
+
                     <div class="details-section">
                         <div class="detail-row">
                             <span class="label">Service</span>
