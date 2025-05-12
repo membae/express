@@ -18,6 +18,7 @@ function generateExpressPayReceipt() {
             <head>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
                 <title>Receipt</title>
                 <style>
                     body {
@@ -38,15 +39,29 @@ function generateExpressPayReceipt() {
                         padding: 20px;
                     }
                     .header {
-                        display: flex;
-                        justify-content: center;
-                        margin-bottom: 20px;
-                    }
-                    .logo {
-                        color: ${primaryColor};
-                        font-size: 24px;
-                        font-weight: bold;
-                    }
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px 16px;
+                    background-color: #fff; /* optional */
+                    
+                }
+
+                .back-button {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px; /* space between icon and "Back" text */
+                    cursor: pointer;
+                }
+
+                .logo-image {
+                    height: 40px; /* adjust as needed */
+                }
+
+                .menu-icon {
+                    font-size: 20px;
+                    cursor: pointer;
+                }
                     .progress-bar {
                         display: flex;
                         justify-content: space-between;
@@ -104,9 +119,17 @@ function generateExpressPayReceipt() {
                 </style>
             </head>
             <body>
-                <div class="receipt-container">
+                <div class="receipt1-container">
+                    <div class="receipt-container">
                     <div class="header">
-                        <span class="logo">expressPay</span>
+                        <div class = "back-button">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Back</span>
+                        </div>
+                        <img src="images/express.png" alt="ExpressPay Logo" class="logo-image">
+                        <div class="menu-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
                     </div>
                     <div class="progress-bar">
                         <div class="progress-step active">
