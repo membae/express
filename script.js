@@ -35,7 +35,7 @@ function generateExpressPayReceipt() {
 
                 .section {
                     background-color: white;
-                    border-radius: 12px;
+                    border-radius: 5px;
                     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
                     padding: 20px;
                 }
@@ -84,11 +84,12 @@ function generateExpressPayReceipt() {
                 }
 
                 .progress-line {
-                    width: 100%;
-                    height: 6px;
+                    width: 90%;
+                    height: 20px;
                     background-color: #f14612;
-                    margin: 10px 0 0;
-                    border-radius: 3px;
+                    margin: 0 auto; 
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
                 }
 
                 .details-section {
@@ -100,6 +101,9 @@ function generateExpressPayReceipt() {
                     justify-content: space-between;
                     padding: 10px 0;
                     border-bottom: 1px solid #eee;
+                }
+                .detail-row:last-child {
+                    border-bottom: none;
                 }
 
                 .label {
@@ -122,35 +126,38 @@ function generateExpressPayReceipt() {
         <body>
             <div class="receipt-container">
 
-                <!-- Section 1: Header & Progress -->
-                <div class="section">
-                    <div class="header">
-                        <div class="back-button">
-                            <i class="fa-solid fa-arrow-left"></i>
-                            <span>Back</span>
-                        </div>
-                        <img src="images/express.png" alt="ExpressPay Logo" class="logo-image">
-                        <div class="menu-icon">
-                            <i class="fa-solid fa-bars"></i>
-                        </div>
-                    </div>
+                <!-- Section 1: Header & Progress with Progress Line touching -->
+<div class="section-with-line">
+    <div class="section first-section">
+        <div class="header">
+            <div class="back-button">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Back</span>
+            </div>
+            <img src="images/express.png" alt="ExpressPay Logo" class="logo-image">
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
 
-                    <div class="progress-bar">
-                        <div class="progress-step active">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <span>Begin</span>
-                        </div>
-                        <div class="progress-step active">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <span>Payment Method</span>
-                        </div>
-                        <div class="progress-step active">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <span>Confirm</span>
-                        </div>
-                    </div>
-                    <div class="progress-line"></div>
-                </div>
+        <div class="progress-bar">
+            <div class="progress-step active">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Begin</span>
+            </div>
+            <div class="progress-step active">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Payment Method</span>
+            </div>
+            <div class="progress-step active">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Confirm</span>
+            </div>
+        </div>
+    </div>
+    <div class="progress-line"></div>
+</div>
+
 
                 <!-- Section 2: Details -->
                 <div class="section">
