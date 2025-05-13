@@ -52,6 +52,7 @@ function generateExpressPayReceipt() {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    margin-bottom: 30px;
                 }
 
                 .back-button {
@@ -143,11 +144,11 @@ function generateExpressPayReceipt() {
 
                 .label {
                     color: #666;
-                    font-weight: 400;
+                    font-weight: 300;
                 }
 
                 .value {
-                    font-weight: 500;
+                    font-weight: 400;
                     color: #000;
                     text-align: right;
                     display: block;
@@ -173,10 +174,10 @@ function generateExpressPayReceipt() {
             </div>
             <img src="images/express.png" alt="ExpressPay Logo" class="logo-image">
             <div class="menu-icon">
-  <div class="bar bar1"></div>
-  <div class="bar bar2"></div>
-  <div class="bar bar3"></div>
-</div>
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+                </div>
 
         </div>
 
