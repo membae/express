@@ -81,6 +81,8 @@ function generateExpressPayReceipt() {
                 .progress-step span {
                     color: #000;
                     font-weight: bold;
+                    white-space: nowrap;
+                    font-size: 13px;
                 }
 
                 .progress-line {
@@ -99,8 +101,11 @@ function generateExpressPayReceipt() {
                 .detail-row {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
+                    gap: 10px;
                     padding: 10px 0;
                     border-bottom: 1px solid #eee;
+                    flex-wrap: nowrap;
                 }
                 .detail-row:last-child {
                     border-bottom: none;
