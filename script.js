@@ -39,12 +39,12 @@ function generateExpressPayReceipt() {
                     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
                     padding: 20px;
                 }
-                    .first-section {
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
+                .first-section {
+                    margin-left: -10px;
+                    margin-right: -10px;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
 
 
 
@@ -96,7 +96,7 @@ function generateExpressPayReceipt() {
                 .progress-line {
                     width: 95%;
                     height: 20px;
-                    background-color: #f14612;
+                    background-color:rgb(241, 144, 18);
                     margin: 0 auto; 
                     border-bottom-left-radius: 4px;
                     border-bottom-right-radius: 4px;
