@@ -119,6 +119,8 @@ function generateExpressPayReceipt() {
                 .value {
                     font-weight: 700;
                     color: #000;
+                    text-align: right;
+                    display: block;
                 }
 
                 @media (max-width: 500px) {
