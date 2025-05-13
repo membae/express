@@ -62,13 +62,34 @@ function generateExpressPayReceipt() {
                 }
 
                 .logo-image {
-                    height: 40px;
+                    height: 30px;
                 }
 
                 .menu-icon {
-                    font-size: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 24px;
+                    height: 18px;
                     cursor: pointer;
-                }
+                    }
+
+                    .bar {
+                    height: 3px;
+                    background-color: #000;
+                    border-radius: 2px;
+                    }
+
+                    .bar1,
+                    .bar2 {
+                    width: 100%;
+                    }
+
+                    .bar3 {
+                    width: 50%; /* This makes the third line half the width */
+                    align-self: flex-end; /* Optional: aligns the short line to the left */
+                    }
+
 
                 .progress-bar {
                     display: flex;
@@ -126,7 +147,7 @@ function generateExpressPayReceipt() {
                 }
 
                 .value {
-                    font-weight: 700;
+                    font-weight: 500;
                     color: #000;
                     text-align: right;
                     display: block;
@@ -152,8 +173,11 @@ function generateExpressPayReceipt() {
             </div>
             <img src="images/express.png" alt="ExpressPay Logo" class="logo-image">
             <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+  <div class="bar bar1"></div>
+  <div class="bar bar2"></div>
+  <div class="bar bar3"></div>
+</div>
+
         </div>
 
         <div class="progress-bar">
