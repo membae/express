@@ -144,7 +144,7 @@ function generateExpressPayReceipt() {
 
                 .label {
                     color: #666;
-                    font-weight: 300;
+                    font-weight: 450;
                 }
 
                 .value {
